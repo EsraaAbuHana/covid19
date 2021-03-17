@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: inherit;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: large;
+    flex-grow: inherit;
+    width: 30%;  
+background-color: rgb(206, 199, 199);
+border: solid gray 2px;
+border-radius: 5px;
+}
+body{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
