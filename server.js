@@ -35,7 +35,7 @@ app.delete('/recordDetails/:id',deleteRecordDetailsHandler);
 //handlers
 function homeHandler(req,res) {
     let url='https://api.covid19api.com/world/total';
-    superagent.get(url).then(data,()=>{
+    superagent.get(url).then(data=>{
         console.log(data.body);
 res.render('pages/home',{data:data.body});
     });
